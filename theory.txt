@@ -1,0 +1,118 @@
+//Each array object is one route
+createBrowserRoute()
+
+//where to render child route content , rendering content of nested route
+
+<Outlet/>
+
+//Data Fetching using Loader
+1. create Loader
+2. provide loader
+3. provide loader to the page
+
+
+const navigation = useNavigation();
+
+  const isLoading = navigation.state === "loading";
+
+  In Navigation there is a state idle and loading based on that we can 
+  implement a loader component.
+
+//Custom function to display error using route
+
+useRouteError();
+ errorElement: <Error />
+ property of the route and component
+
+//React router form component
+<Form>
+      {/* //simply match the closest router */}
+
+//Tailwind responsive design
+
+color of text  = text-nameofcolor(red,blue etc)-intensity(100,200,300)
+
+border-radius is : rounded-xl or full
+
+tracking-wide for letter spacing
+
+adding our own value h-[our value]
+h-screen is 100vh full viewport value
+
+/=>use sm:then the style like ex: sm:my-16
+this style start applying onward from the value
+
+/=> use md:text-base means another Breakpoint at 768px 
+//the text will become default
+
+//We can use classname and also can add our own styles 
+=>className="w-72 input mb-8"
+
+Breakpoint prefix	Minimum width	CSS
+sm	40rem (640px)	  @media (width >= 40rem) { ... }
+md	48rem (768px)	  @media (width >= 48rem) { ... }
+lg	64rem (1024px)	@media (width >= 64rem) { ... }
+xl	80rem (1280px)	@media (width >= 80rem) { ... }
+2xl	96rem (1536px)	@media (width >= 96rem) { ... }
+
+//flexbox
+disply: flex is flex
+align-items:center is items-center
+justify-content:space-between is justify-between
+
+className ="flex items-center justify-between"
+
+//grid
+display:grid is grid only
+h-[500px] is height 500px but our value not the class value of tailwind
+grid-row-3 
+grid-cols-3 
+gap 
+
+
+//elements hover state disabled focus
+
+hover
+className="text-blue-500 hover:text-blue-800 hover:underline "
+
+//adding transition//
+transition-colors duration-300
+Just the above normal transition and duration of transition for colors
+
+//focus means outline of the button when user hits the tab key
+ring means shadow
+
+focus:outline-none 
+focus:ring 
+focus:ring-yellow-300 
+focus:ring-offset-2 //width of the ring
+
+//cursor disabled 
+disabled:cursor-not-allowed
+
+//re-using any styles 
+
+@layer components{
+  .input(classname){ all the styles;
+  }
+}
+
+and passing className="input" into the components
+
+//re-using styles with react components.
+create jsx for the button and recieve children and when button is needed then
+simply use the button component with the styles.
+
+ //bg-slate-200/20 - This means bg color slate and with opacity 20 %
+
+ importing fonts 
+ //Import fonts from google and paste it on the index.html
+ then in tailwin.config.js 
+ use this to set font: inside theme
+ fontFamily: {
+      pizza: "Roboto Mono, monospace",
+    },
+
+  if we put sans instead of pizza tailwind will inject the font
+  in the whole app.  It will make the whole app font family to that
+  font family.
