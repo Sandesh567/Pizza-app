@@ -1,7 +1,7 @@
 export function formatCurrency(value) {
-  return new Intl.NumberFormat("en", {
+  return new Intl.NumberFormat("ne-NP", {
     style: "currency",
-    currency: "EUR",
+    currency: "NPR",
   }).format(value);
 }
 
