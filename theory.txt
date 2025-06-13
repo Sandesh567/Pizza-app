@@ -116,3 +116,12 @@ simply use the button component with the styles.
   if we put sans instead of pizza tailwind will inject the font
   in the whole app.  It will make the whole app font family to that
   font family.
+
+
+  //fetching data without navigaion: useFetcher
+
+useFetcher => 
+sometimes we want to fetch data from another route , which is
+not associated with current page, without causing navigation.
+
+use data from menu route without user going there.
