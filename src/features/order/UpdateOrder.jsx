@@ -12,3 +12,8 @@ function UpdateOrder({ order }) {
 }
 
 export default UpdateOrder;
+
+export async function action({ request, params }) {
+  console.log("update");
+  return null;
+}
