@@ -10,7 +10,7 @@ function Header() {
     "
     >
       <Link to="/" className="tracking-widest text-slate-50">
-        Pizza Farm Co.
+        Pizza O'&#x1F550; Clock.
       </Link>
       <SearchOrder />
       <Username />
